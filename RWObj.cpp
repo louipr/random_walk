@@ -58,7 +58,7 @@ void RWObj::restart()
     if(!seed_is_init)
     {
         seed_is_init = true;
-        srand(time(0)); //initialize rand() once
+        srand(time(0)); //initialize srand() seed once
     }
 
     for(int i = 0; i < Tk; i++)
