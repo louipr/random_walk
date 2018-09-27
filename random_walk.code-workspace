@@ -9,7 +9,9 @@
 			"iostream": "cpp",
 			"ostream": "cpp",
 			"vector": "cpp",
-			"ctime": "cpp"
+			"ctime": "cpp",
+			"*.tcc": "cpp",
+			"string_view": "cpp"
 		}
 	}
 }

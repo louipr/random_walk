@@ -21,7 +21,7 @@ int main()
     }
 
     //Output debug log
-    RWObj rwdbg(2,20);
+    RWObj rwdbg(2,4);
     rwdbg.set_debug(true);
     rwdbg.restart();
     rwdbg.print();

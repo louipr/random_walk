@@ -21,11 +21,13 @@ RWObj::RWObj(int Dn, int Tk):Dn(Dn),Tk(Tk),debug(0)
 }
 
 RWObj::RWObj():Dn(0),Tk(0),debug(0)
+//empty constructor 
 {
 
 }
 
 RWObj::RWObj(const RWObj & RW2)
+// copy constructor 
 {
     Dn = RW2.Dn;
     Tk = RW2.Tk;
@@ -50,15 +52,17 @@ void RWObj::restart()
     }
     int d; // points to a dimension
     int delta; // stores 1 or -1
-    if(debug) 
-    {
-         cout << "[DBG] " << "Coordinate definition (d1,d2,d3,..,dn)"<<endl; 
-    }
     
     if(!seed_is_init)
     {
         seed_is_init = true;
         srand(time(0)); //initialize srand() seed once
+    }
+
+    if(debug) 
+    {
+         cout << "[DBG] " << "Coordinate definition (d1,d2,d3,..,dn)"<<endl; 
+         cout << "[DBG] " << "Tk="<< Tk <<endl; 
     }
 
     for(int i = 0; i < Tk; i++)
