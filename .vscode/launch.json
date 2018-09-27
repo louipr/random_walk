@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/rand_walk.exe",
+            "program": "${workspaceFolder}/out.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

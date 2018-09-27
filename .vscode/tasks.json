@@ -8,7 +8,7 @@
             "type": "shell",
             "command": "rm",
             "args": [
-                "./rand_walk.exe"
+                "./out.exe"
             ],
             "problemMatcher": []
         },
@@ -19,7 +19,7 @@
             "args": [
                 "-g",
                 "-o",
-                "rand_walk.exe",
+                "out.exe",
                 "*.cpp"
             ],
             "problemMatcher": []
@@ -27,12 +27,12 @@
         {
             "label": "Run",
             "type": "shell",
-            "command":"./rand_walk.exe",
+            "command":"./out.exe",
             "problemMatcher": []
         },
         {
             "label": "Build & Run",
-            "command":"./rand_walk.exe",
+            "command":"./out.exe",
             "dependsOn": [
                 "Clean",
                 "Build"
